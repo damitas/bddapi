@@ -1,0 +1,32 @@
+{
+  "name": "bddapi",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:negative": "cucumber-js --tags @negative",
+    "test:contract": "cucumber-js --tags @contract",
+    "test:bug": "cucumber-js --tags @bug",
+    "test:ci": "cucumber-js",
+    "report": "open reports/report.html",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^20.0.0",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^8.61.1",
+    "@typescript-eslint/parser": "^8.61.1",
+    "axios": "^1.6.0",
+    "eslint": "^10.5.0",
+    "ts-node": "^10.9.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "winston": "^3.19.0",
+    "zod": "^4.4.3"
+  }
+}
