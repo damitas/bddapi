@@ -19,6 +19,14 @@ Automated BDD test suite for the [Zippopotam.us](https://api.zippopotam.us) post
 npm ci
 ```
 
+`npm ci` is used instead of `npm install` because it installs dependencies directly from `package-lock.json`, guaranteeing the exact same versions are installed every time. Unlike `npm install`, it will error if the lockfile is missing or out of sync with `package.json`, making dependency issues visible immediately rather than silently resolving to a different version. This ensures consistent behaviour across local machines, CI pipelines, and Docker builds.
+
+---
+
+## BDD Scenarios
+
+All test scenarios are written in Gherkin and can be found in [`features/postcode.feature`](features/postcode.feature).
+
 ---
 
 ## Running Tests
