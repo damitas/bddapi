@@ -1,3 +1,4 @@
+/** Winston logger that writes timestamped output to the console and logs/api.log. */
 import { createLogger, format, transports } from "winston";
 
 const logger = createLogger({

@@ -7,7 +7,7 @@
     "test:negative": "cucumber-js --tags @negative",
     "test:contract": "cucumber-js --tags @contract",
     "test:bug": "cucumber-js --tags @bug",
-    "test:ci": "cucumber-js",
+    "test:ci": "cucumber-js --tags \"not @bug\"",
     "report": "open reports/report.html",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix"
